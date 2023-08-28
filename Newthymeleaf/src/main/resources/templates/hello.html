@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello World</title>
+    <!--    <link th:href="@{/css/bootstrap.css}"rel="stylesheet"/>&lt;!&ndash;js&ndash;&gt;-->
+<!--    <script th:src="@{/js/bootstrap.js}"></script>-->
+</head>
+<body>
+<p>Today is: <span th:text="${today}"></span>.</p>
+<!--<div th:object="${session.user}">&lt;!&ndash; th:object tồn tại trong phạm vi của thẻ div này &ndash;&gt;-->
+<!--    &lt;!&ndash; Lấy ra tên của đối tượng session.user &ndash;&gt;-->
+<!--&lt;!&ndash;    <p>Name: <span th:text="*{firstName}"></span>.</p>&lt;!&ndash; Lấy ra lastName của đối tượng session.user &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <p>Surname: <span th:text="*{lastName}"></span>.</p>&ndash;&gt;-->
+<!--</div>-->
+<h1 th:text="'Hello, ' + ${name}"></h1>
+
+<a href="/">Trang chủ</a>
+<!--<p th:utext="#{home.welcome}">Xin chào các bạn!</p>-->
+<!--<h1 th:utext="#{loda.hello}"></h1>-->
+<!--<a th:href="@{/profile}" class="btn btn-primary">Loda Profile</a>-->
+</body>
+</html>
